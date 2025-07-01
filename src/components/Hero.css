@@ -1,0 +1,71 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: url('/assets/stars-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  overflow: hidden;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+  z-index: 1;
+}
+
+.particles-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  z-index: 2;
+  text-shadow: 0 0 12px rgba(0, 255, 255, 0.3);
+}
+
+.hero-title .highlight {
+  color: #00ffe0;
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-top: 15px;
+  color: #dddddd;
+  z-index: 2;
+  max-width: 600px;
+}
+
+.resume-btn {
+  margin-top: 30px;
+  padding: 12px 28px;
+  font-size: 1rem;
+  background: linear-gradient(135deg, #00ffe0, #61dafb);
+  color: #000;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 600;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+  z-index: 2;
+  transition: all 0.3s ease-in-out;
+}
+
+.resume-btn:hover {
+  background: linear-gradient(135deg, #00ccaa, #42cfff);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
+}
